@@ -85,11 +85,6 @@ En qué ecosistema habita: Desiertos y zonas extremadamente áridas del sur de �
 Qué sentido afecta: Visión
 Para qué lo utilizan: Supervivencia
 Acción: Despistar herbívoros confundiéndose con las rocas y grava del entorno
-Fuentes y Enlaces Relevantes
-Fundación Aquae — Ejemplos de mimetismo animal y camuflaje de impacto: https://www.fundacionaquae.org/wiki/animales-que-se-camuflan/
-Enciclopedia Concepto — Mimetismo: Tipos, funciones y ejemplos: https://concepto.de/mimetismo/
-Museo Nacional de Historia Natural de Chile — Mimetismo batesiano y mülleriano en insectos: https://www.mnhn.gob.cl/noticias/mimetismo-batesiano-y-mulleriano-en-insectos
-Wikipedia — Mimetismo mülleriano y adaptación evolutiva: https://es.wikipedia.org/wiki/Mimetismo_m%C3%BClleriano
 Comunicación sensorial a través del mimetismo y el camuflaje: Comunicación más que humana
 Introducción
 En la naturaleza existen distintas formas de comunicación mediante el sonido, los olores, las texturas y la visión. Dentro de los ciclos vitales del ecosistema, tanto las presas como los depredadores han desarrollado estrategias adaptativas para ocultarse, alimentarse o evitar ser devorados.
