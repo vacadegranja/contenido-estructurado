@@ -1,109 +1,58 @@
-/*
-  ============================================================
-  TOKENS
-  ============================================================
-
-  Variables reutilizables para mantener un sistema visual
-  consistente en todo el documento.
-*/
-
 :root {
-  --color-background: #00ff44;
-  --color-text: #0048ff;
-  --color-accent: #f53d84;
+  --color-background: #c57c2e;
+  --color-text: #fed168;
+  --color-accent: #fed168;
+  --color-card: rgba(207, 201, 201, 0.173);
+  --color-dark: #0a196600;
 
-  --font-family-base: system-ui, Arial, Helvetica, sans-serif;
+  --font-family-base: system-ui,Helvetica, sans-serif;
+  --font-family-head: system-ui, Impact, Helvetica, sans-serif;
 
   --font-size-body: 1rem;
-  --font-size-h1: 10rem;
-  --font-size-h2: 2rem;
-  --font-size-h3: 1.25rem;
+  --font-size-h1: 15rem;
+  --font-size-h2: 5rem;
+  --font-size-h3: 2rem;
+  --font-size-p: 2rem;
 }
-
-/*
-  ============================================================
-  SELECTOR UNIVERSAL
-  ============================================================
-  * funciona como un comodín.
-  Selecciona todos los elementos HTML.
-*/
-
 * {
   box-sizing: border-box;
-  /*
-    Regla temporal para visualizar las cajas.
-    Puede eliminarse cuando ya no sea necesaria.
-  */
-  outline: 1px solid;
 }
 
-
-/*
-  ============================================================
-  BODY
-  ============================================================
-
-  Define el sistema visual base del documento.
-*/
 body {
   margin: 0;
-
   background-color: var(--color-background);
   color: var(--color-text);
-
-  font-family: var(--font-family-base);
+  font-family: var(--font-family-head);
   font-size: var(--font-size-body);
 }
 
-/*
-  ============================================================
-  JERARQUÍA TIPOGRÁFICA
-  ============================================================
-
-  HTML define la jerarquía.
-  CSS controla su representación visual.
-*/
-
 h1 {
+  font-family: var(--font-family-head);
   font-size: var(--font-size-h1);
+  line-height: 1;
+  margin: 0;
 }
 
 h2 {
   font-size: var(--font-size-h2);
+  font-family: var(--font-family-head);
 }
 
 h3 {
   font-size: var(--font-size-h3);
+  font-family: var(--font-family-head);
 }
 
-
-/*
-  ============================================================
-  LINKS
-  ============================================================
-
-  El color de acento identifica enlaces y acciones.
-*/
+header p{
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-p);
+  line-height: 1;
+}
 
 a {
   color: var(--color-accent);
+  text-decoration: none;
 }
-
-
-/*
-  ============================================================
-  CONTENEDOR PRINCIPAL
-  ============================================================
-
-  width:
-  ocupa una proporción del espacio disponible.
-
-  max-width:
-  evita que el contenido crezca demasiado.
-
-  margin: 0 auto:
-  distribuye el espacio horizontal y centra la caja.
-*/
 
 main {
   width: 65%;
@@ -111,13 +60,6 @@ main {
   max-width: 1240px;
   margin: 0 auto;
 }
-
-
-/*
-  ============================================================
-  ESPACIADO BÁSICO
-  ============================================================
-*/
 
 header,
 main,
@@ -131,4 +73,129 @@ section {
 
 nav a {
   margin-right: 1rem;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 0 1rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.subtitle {
+  margin-top: 0.75rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.home-main {
+  width: min(1100px, 80%);
+}
+
+.intro {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.cta-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.9rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.button.primary {
+  background: var(--color-dark);
+  color: rgb(255, 255, 255);
+}
+
+.button.secondary {
+  background: rgba(255, 255, 255, 0.25);
+  color: var(--color-text);
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.home-card {
+  background: var(--color-card);
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 18px;
+  padding: 1.5rem;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.home-card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+.home-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.page-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-section h1 {
+  text-align: center;
+}
+
+.page-section p,
+.page-section li {
+  font-size: 1.05rem;
+}
+
+@media (max-width: 700px) {
+  header,
+  main,
+  footer {
+    padding: 1rem;
+  }
+
+  .top-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  main {
+    width: 90%;
+  }
 }
