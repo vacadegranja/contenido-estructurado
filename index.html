@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRIPSIS | Inicio</title>
     <link rel="stylesheet" href="css/style.css" />
+      <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: #c57c2e;
+            color: #fed168;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .letra {
+            display: inline-block;
+            transition: opacity 0.6s ease, filter 0.6s ease;
+        }
+
+        .letra.oculta {
+            opacity: 0;
+            filter: blur(8px);
+        }
+    </style>
   </head>
   <body class="home-page">
     <header class="home-header">
@@ -13,7 +41,51 @@
         <a href="info.html">Información</a>
       </nav>
       <div class="hero">
-        <h1>CRIPSIS</h1>
+        <h1 id="titulo">CRIPSIS</h1>
+          <script>
+        const titulo = document.getElementById("titulo");
+
+        // Separamos cada letra
+        titulo.innerHTML = titulo.textContent
+            .split("")
+            .map(letra => {
+                if (letra === " ") {
+                    return "&nbsp;";
+                }
+
+                return `<span class="letra">${letra}</span>`;
+            })
+            .join("");
+
+        const letras = document.querySelectorAll(".letra");
+
+        document.addEventListener("mousemove", (e) => {
+
+            letras.forEach(letra => {
+
+                const rect = letra.getBoundingClientRect();
+
+                // Centro de cada letra
+                const x = rect.left + rect.width / 2;
+                const y = rect.top + rect.height / 2;
+
+                // Distancia entre mouse y letra
+                const distancia = Math.sqrt(
+                    (e.clientX - x) ** 2 +
+                    (e.clientY - y) ** 2
+                );
+
+                // Radio de desaparición
+                const radio = 80;
+
+                if (distancia < radio) {
+                    letra.classList.add("oculta");
+                } else {
+                    letra.classList.remove("oculta");
+                }
+            });
+        });
+    </script>
         <p >IMPERCEPTIBILIDAD A LOS SENTIDOS</p>
       </div>
     </header>
