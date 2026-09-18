@@ -5,11 +5,11 @@
   --color-card: rgba(207, 201, 201, 0.173);
   --color-dark: #0a196600;
 
-  --font-family-base: system-ui,Helvetica, sans-serif;
-  --font-family-head: system-ui, Impact, Helvetica, sans-serif;
+  --font-family-base: Helvetica, sans-serif;
+  --font-family-head: "Maiz-uno", sans-serif;
 
   --font-size-body: 1rem;
-  --font-size-h1: 15rem;
+  --font-size-h1: 10rem;
   --font-size-h2: 5rem;
   --font-size-h3: 2rem;
   --font-size-p: 2rem;
@@ -22,7 +22,7 @@ body {
   margin: 0;
   background-color: var(--color-background);
   color: var(--color-text);
-  font-family: var(--font-family-head);
+  font-family: var(--font-family-base);
   font-size: var(--font-size-body);
 }
 
@@ -35,12 +35,12 @@ h1 {
 
 h2 {
   font-size: var(--font-size-h2);
-  font-family: var(--font-family-head);
+  font-family: var(--font-family-base);
 }
 
 h3 {
   font-size: var(--font-size-h3);
-  font-family: var(--font-family-head);
+  font-family: var(--font-family-base);
 }
 
 header p{
