@@ -11,26 +11,25 @@
             height: 100vh;
             background: #c57c2e;
             color: #fed168;
-            display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
         }
 
         h1 {
-            font-size: 60px;
+            font-size: 13rem;
             font-weight: 300;
             letter-spacing: 2px;
         }
 
         .letra {
             display: inline-block;
-            transition: opacity 0.6s ease, filter 0.6s ease;
+            transition: opacity 0.5s ease, filter 0.4s ease;
         }
 
         .letra.oculta {
             opacity: 0;
-            filter: blur(8px);
+            filter: blur(10px);
         }
     </style>
   </head>
@@ -76,7 +75,7 @@
                 );
 
                 // Radio de desaparición
-                const radio = 80;
+                const radio = 150;
 
                 if (distancia < radio) {
                     letra.classList.add("oculta");
