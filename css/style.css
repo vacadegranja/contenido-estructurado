@@ -1,11 +1,11 @@
 :root {
-  --color-background: #c57c2e;
-  --color-text: #fed168;
-  --color-accent: #fed168;
+  --color-background: #64531b;
+  --color-text: #f5e8c6;
+  --color-accent: #a09526;
   --color-card: rgba(207, 201, 201, 0.173);
   --color-dark: #0a196600;
 
-  --font-family-base: Helvetica, sans-serif;
+  --font-family-base: "neulis-sans", sans-serif;
   --font-family-head: "Maiz-uno", sans-serif;
 
   --font-size-body: 1rem;
@@ -31,6 +31,44 @@ h1 {
   font-size: var(--font-size-h1);
   line-height: 1;
   margin: 0;
+}
+
+ h1 {
+    font-size: 12vw;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+h1 span {
+    display: inline-block;
+    transition: opacity 2s ease, filter 2s ease;
+    opacity: .1;
+    filter: blur(10px);
+}
+
+
+h1 span:nth-child(1) {
+  opacity: .05; }
+h1 span:nth-child(2) {
+  opacity: .15; }
+h1 span:nth-child(3) {
+  opacity: .05; }
+h1 span:nth-child(4) {
+  opacity: .1; }
+h1 span:nth-child(5) {
+  opacity: .05; }
+h1 span:nth-child(6) {
+  color: ;
+  opacity: .075; }
+h1 span:nth-child(7) {
+  color: ;
+  opacity: .2; }
+
+
+h1 span:hover {
+    transition: opacity 0.5s ease, filter 0.4s ease;
+    opacity: 1;
+    filter: blur(0);
 }
 
 h2 {
