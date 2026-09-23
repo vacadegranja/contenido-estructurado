@@ -41,7 +41,7 @@ h1 {
 
 h1 span {
     display: inline-block;
-    transition: opacity 2s ease, filter 2s ease;
+    transition: opacity 1s ease, filter 1s ease;
     opacity: .1;
     filter: blur(10px);
 }
@@ -58,10 +58,8 @@ h1 span:nth-child(4) {
 h1 span:nth-child(5) {
   opacity: .05; }
 h1 span:nth-child(6) {
-  color: ;
   opacity: .075; }
 h1 span:nth-child(7) {
-  color: ;
   opacity: .2; }
 
 
