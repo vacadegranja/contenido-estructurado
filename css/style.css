@@ -28,16 +28,13 @@ body {
 
 h1 {
   font-family: var(--font-family-head);
-  font-size: var(--font-size-h1);
+  font-size: 12vw;
   line-height: 1;
   margin: 0;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
- h1 {
-    font-size: 12vw;
-    font-weight: 300;
-    letter-spacing: 2px;
-}
 
 h1 span {
     display: inline-block;
@@ -209,9 +206,7 @@ nav a {
   padding: 2rem;
 }
 
-.page-section h1 {
-  text-align: center;
-}
+
 
 .page-section p,
 .page-section li {
