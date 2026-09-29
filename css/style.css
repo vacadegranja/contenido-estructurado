@@ -112,11 +112,10 @@ nav a {
   font-size: 2.5vw;
 }
 
-.eri p {
+.animal-section header p {
   text-align: center;
   padding: 2rem 0 1rem;
-  justify-content: center;
-  font-size: 4vw;
+  font-size: 2vw;
 }
 
 .home-main {
