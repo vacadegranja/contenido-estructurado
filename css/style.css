@@ -13,6 +13,8 @@
   --font-size-h2: 5rem;
   --font-size-h3: 2rem;
   --font-size-p: 2rem;
+  --font-size-margin: 1.5rem;
+  --font-line-height: 1.5;
 }
 
 * {
@@ -20,7 +22,7 @@
 }
 
 body {
-  margin: 0;
+  margin: var(--font-size-margin);
   background-color: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-family-base);
@@ -68,6 +70,7 @@ h3 {
 }
 
 header p {
+  margin: var(--font-size-margin);
   font-family: var(--font-family-base);
   font-size: var(--font-size-p);
   line-height: 1;
@@ -110,14 +113,24 @@ nav a {
   text-align: center;
   padding: 2rem 0 1rem;
   font-size: 2.5vw;
+  line-height: var(--font-line-height);
 }
 
 .animal-section header p {
+  margin: var(--font-size-margin);
+  line-height: var(--font-line-height);
   text-align: center;
   padding: 2rem 0 1rem;
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 
+.animal-section p{
+  margin: var(--font-size-margin);
+  line-height: var(--font-line-height);
+  text-align: left;
+  padding: 2rem 0 1rem;
+  font-size:1.5vw;
+}
 .home-main {
   width: min(1100px, 80%);
 }
