@@ -38,6 +38,12 @@ h1 {
   text-align: center;
 }
 
+.home-header .hero h1:not(#titulo) {
+  max-width: 100%;
+  font-size: clamp(5rem, 10vw, 5rem);
+  text-wrap: balance;
+}
+
 h1 span {
   display: inline-block;
   transition: opacity 1s ease, filter 1s ease;
@@ -170,7 +176,14 @@ nav a {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
-  image-max-width: 100%;
+}
+
+.animal-section img {
+  display: block;
+  width: 800px;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
 }
 
 
