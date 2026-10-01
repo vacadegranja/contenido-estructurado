@@ -9,7 +9,7 @@
   --font-family-head: "Maiz uno", sans-serif;
 
   --font-size-body: max(1.5vw, 1rem);
-  --font-size-h1: 4.5rem;
+  --font-size-h1: max(8vw, 3rem);
   --font-size-h2: 5rem;
   --font-size-h3: 2rem;
   --font-size-p: 2rem;
@@ -29,14 +29,9 @@ body {
   font-size: var(--font-size-body);
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 18px;
-}
 h1 {
   font-family: var(--font-family-head);
-  font-size: 12vw;
+  font-size: var(--font-size-h1);
   line-height: 1;
   margin: 0;
   letter-spacing: 2px;
@@ -44,9 +39,12 @@ h1 {
 
 }
 
+#saltamontes h1{
+  text-align: center;
+  font-size: max(8vw, 1rem);
+}
+  
 .home-header .hero h1:not(#titulo) {
-  max-width: 100%;
-  font-size: clamp(7.5rem, 10vw, 7.5rem);
   text-wrap: balance;
   -webkit-text-stroke: 2px black;
 }
@@ -115,6 +113,7 @@ nav a {
   margin-right: 1rem;
 }
 
+
 .top-nav {
   display: flex;
   font-size: 1.5rem;
@@ -128,6 +127,7 @@ nav a {
   padding: 2rem 0 1rem;
   font-size: 2.5vw;
   line-height: var(--font-line-height);
+  font-size: max(2.5vw, 1.5rem);
 }
 
 .animal-section header p {
@@ -135,7 +135,8 @@ nav a {
   line-height: var(--font-line-height);
   text-align: center;
   padding: 2rem, 1rem;
-  font-size: 2vw;
+  font-size: max(2.5vw, 1.5rem);
+ 
 }
 
 p{
@@ -160,18 +161,27 @@ p{
   border: 2px solid rgba(255, 255, 255, 0);
   border-radius: 18px;
   padding: 1.5rem;
-  min-height: 160px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  min-height: 10px;
   width: 100%;
   color: var(--color-text);
-  text-align: center;
-  transition: transform 0.2s ease;
+  text-align: left;
 }
 
 .home-card:hover {
   transform: translateY(-2px);
+}
+
+.home-card h3 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.home-card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .animal-card {
@@ -187,13 +197,6 @@ p{
   border-radius: 10px;
 }
 
-.home-card h3 {
-  margin: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
-  line-height: 1.2;
-}
-
 .page-section {
   max-width: 900px;
   margin: 0 auto;
@@ -207,9 +210,16 @@ p{
   max-width: 100%;
   height: auto;
   margin: 2rem auto;
+  border-radius: 18px;
 }
 
-
+.home-header img {
+  display: block;
+  width: min(800px, 100%);
+  height: auto;
+  margin: 1rem auto 2rem;
+  border-radius: 18px;
+}
 
 @media (max-width: 700px) {
   main,
