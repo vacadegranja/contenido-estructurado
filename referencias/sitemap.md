@@ -3,7 +3,9 @@
 - Inicio
 - Sentidos
 - Animales
+- Nombre y nombre cientifico
 - Imagen
 - Dato interesante
 - info
-- Cierre
+- Camuflaje
+- Sentidos
