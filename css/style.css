@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Maiz dos';
+    src: url('maiz-dos-3-2-1-webfont.woff2') format('woff2'),
+         url('maiz-dos-3-2-1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Maiz uno';
+    src: url('maiz-uno-3-2-1-webfont.woff2') format('woff2'),
+         url('maiz-uno-3-2-1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 :root {
   --color-background: #64531b;
   --color-text: #f5e8c6;
